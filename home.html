@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Weather Recipe Finder</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="flex-container-pages">
+            <a href="home.html">Home Page</a>
+            <a href="search.html">Search For Recipes</a>
+            <a href="favorites.html">View Favorites</a>
+        </div>
+
+        <div>
+            <h2>Here you can get suggested recipes based on your weather!</h2>
+            <h4>If you wish to look up recipes, click to the search recipes link!</h4>
+            <h4>If you wish to find recipes you favorites, click to the view favorites link!</h4>
+        </div>
+
+        <div>
+            <input id="location" placeholder="Enter city...">
+            <menu hidden id="suggestions"></menu>
+
+            <h3>Weather:</h3>
+            <div hidden id="weather"></div>
+          
+            <h3>Suggested Recipes:</h3>
+            <ul id="recipeListBox" class="flex-container-recipes"></ul>
+            
+        </div>
+
+        <script src="recipes.js"></script>
+        <script src="home.js"></script>
+    </body>
+</html>

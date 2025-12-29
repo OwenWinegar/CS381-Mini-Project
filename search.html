@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Weather Recipe Finder: Search</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div>
+            <div class="flex-container-pages">
+                <a href="home.html">Home Page</a>
+                <a href="search.html">Search For Recipes</a>
+                <a href="favorites.html">View Favorites</a>
+            </div>
+    
+            <div>
+                <h3>Search Page</h3>
+                <input type="text" id="search" placeholder="Search recipes...">
+                    <select id="mealFilter">
+                    <option value="all">All Meals</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="light">Light</option>
+                    <option value="medium">Medium</option>
+                    <option value="heavy">Heavy</option>
+                    <option value="cold">Cold</option>
+                    <option value="lukewarm">Lukewarm</option>
+                    <option value="warm">Warm</option>
+                    <option value="hot">Hot</option>
+                </select>
+                <ul id="recipeListBox" class="flex-container-recipes"></ul>
+            </div>
+
+            <script src="recipes.js"></script>
+            <script src="search.js"></script>
+        </div>
+        
+    </body>
+</html>
