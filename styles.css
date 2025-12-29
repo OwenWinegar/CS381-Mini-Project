@@ -1,0 +1,263 @@
+/* global styles*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+  }
+  /* heading elements */
+  h2, h3, h4 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Input box */
+  #location, #search {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 15px;
+    width: 250px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    transition: 0.2s;
+  }
+  /* when a location is selected */
+  #location:focus {
+    border-color: #006be6;
+    box-shadow: 0 0 4px rgba(0, 107, 230, 0.4);
+    outline: none;
+  }
+  
+  /* Suggestions box */
+  #suggestions {
+    width: 260px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    border: 1px solid #ccc;
+  }
+
+  /* each suggestion li */
+  #suggestions li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #suggestions li:hover {
+    background: #e0e0e0;
+  }
+  
+  /* Weather display box */
+  #weather {
+    width: fit-content;
+    margin: 10px auto 30px;
+    font-size: 18px;
+    padding: 15px 20px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  /* links up top*/
+  .flex-container-pages {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    background: #006be6;
+    padding: 15px 0;
+  }
+  
+  /* a tag element */
+  .flex-container-pages a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: 0.2s;
+  }
+  
+  .flex-container-pages a:hover {
+    background: rgba(255,255,255,0.25);
+  }
+  
+  /* recipe card layout */
+  .flex-container-recipes {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 10px;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 18px;
+  }
+  
+  
+  /* recipe cards styles for each li*/
+  .flex-container-recipes li {
+    width: 270px;
+    padding: 20px;
+    border-radius: 12px;
+    color: #222;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.15s ease, box-shadow 0.2s ease;
+  }
+  
+  .flex-container-recipes li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+
+  /* image borders */
+  img{
+    border: 2px solid rgba(52, 51, 51, 0.601);
+  }
+  
+  /* temperature colors */
+  .flex-container-recipes li.cold {
+    background-color: #cce9ff;
+  }
+  
+  .flex-container-recipes li.lukewarm {
+    background-color: #8ed98e;
+  }
+  
+  .flex-container-recipes li.warm {
+    background-color: #ffd54a;
+  }
+  
+  .flex-container-recipes li.hot {
+    background-color: #ff944d;
+  }
+  
+  .flex-container-recipes li a {
+    font-weight: bold;
+    color: #003366;
+    text-decoration: none;
+  }
+  
+  .flex-container-recipes li a:hover {
+    color: #001a80;
+    text-decoration: underline;
+  }
+  
+  .flex-container-recipes li a:visited {
+    color: #4b0082;
+  }
+  
+  .flex-container-recipes li a:active {
+    color: #cc0000;
+  }
+  
+/* favorites button */
+  .favorites{ 
+    background-color: beige;
+    padding: 8px 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid rgba(52, 51, 51, 0.601);
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.2s;
+  }
+  
+  .favorites:hover {
+    background-color: yellow;
+    transform: scale(1.05);
+  }
+  
+  .favorites:active,
+  .favorites:focus {
+    background-color: gold;
+  }
+
+  .favorites:disabled {
+    background-color: beige !important;
+    transform: none !important;
+    cursor: default !important;
+    opacity: 0.7;
+    }
+
+    .favorites:disabled:hover,
+    .favorites:disabled:active,
+    .favorites:disabled:focus {
+        background-color: beige !important;
+        transform: none !important;
+    }
+
+
+/* remove from favorites button */
+.remove-favorite{ 
+    background-color: rgb(249, 150, 150);
+    padding: 8px 16px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid rgba(52, 51, 51, 0.601);
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.2s;
+    margin-left: 15px;
+  }
+  
+  .remove-favorite:hover {
+    background-color: rgb(247, 71, 71);
+    transform: scale(1.05);
+  }
+  
+  .remove-favorite:active,
+  .remove-favorite:focus {
+    background-color: rgb(255, 0, 0);
+  }
+  
+ /* temp list items */
+  .temp-places {
+    list-style: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    background: white;
+    transition: 0.2s;
+  }
+  
+  .temp-places:hover {
+    background-color: #8d8d8d;
+    color: white;
+  }
+
+/* meal filter dropdown */
+#mealFilter {
+    display: block;
+    margin: 10px auto 30px;
+    padding: 10px 15px;
+    width: 250px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#mealFilter:hover,
+#mealFilter:focus {
+    border-color: #006be6;
+    box-shadow: 0 0 4px rgba(0, 107, 230, 0.4);
+    outline: none;
+}
+
+#mealFilter option {
+    padding: 8px 12px;
+}
