@@ -30,4 +30,4 @@ This website allows for users to view recipes that would be suitable for the wea
 ## How to Run the Program
 1. Open the project folder in Visual Studio or VS Code
 2. Ensure all files are in the same directory
-3. Run the program!
+3. Execute the program
