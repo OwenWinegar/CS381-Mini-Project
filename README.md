@@ -1,4 +1,4 @@
-# Recipe Finder
+# Weather Based Recipe Finder
 
 ## Overview
 This website allows for users to view recipes that would be suitable for the weather at a user inputted location or they can search for recipes based on each recipes temperature, time of day, or weight attributes.
